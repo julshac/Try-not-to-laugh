@@ -8,19 +8,34 @@ namespace ConsoleApp1
 {
     class Program
     {
+        //Puzzler 3
+        static int divide(int a, int b)
+        {
+          // if (b == 0) return 0; 
+          if (b == 0) {throw new DivideByZeroException();}
+
+            return a / b;
+        }
+        
+        //Puzzler 2
+       static void foo()
+        {
+            foo();
+        }
+        
+        //Puzzler 1
+        static int min(int a, int b)
+        {
+            if (a < b)
+            return a;
+            else 
+            return b;
+        }
+        
         static void Main(string[] args)
         {
-            int a = 1;
-            int b = 101;
-            if (a < b)
-            {
-                a = 2 * a;
-            }
-        else 
-            {
-                b = a;
-            }
-            System.Console.WriteLine("Значение а = {0}, Значение b = {1}", a, b);
+            foo();
+            int 
             Console.ReadKey();
         }
     }
