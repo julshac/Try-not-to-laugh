@@ -35,7 +35,6 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             foo();
-            int 
             Console.ReadKey();
         }
     }
